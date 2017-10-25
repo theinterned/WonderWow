@@ -21,8 +21,8 @@ export default ({ data }) => {
           <h3>{myData.subtitle}</h3>
           <Flex justify="center" wrap={['wrap', 'wrap', 'nowrap']}>
             <Box m={[1]} width={[1, 1 / 2, 1 / 4]}>
-              <Link to="/about">
-                <ButtonPrimary>About</ButtonPrimary>
+              <Link to="/blog">
+                <ButtonPrimary>Blog</ButtonPrimary>
               </Link>
             </Box>
             <Box m={[1]} width={[1, 1 / 2, 1 / 4]}>
