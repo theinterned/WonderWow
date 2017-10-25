@@ -16,11 +16,8 @@ const basicNav = css`
   margin: 0;
   width: 100%;
   list-style-type: none;
-  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 1);
-  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 1);
   z-index: 9998;
-  height: 3.5rem;
+  height: 6rem;
 
   & ul {
     list-style-type: none;
@@ -136,13 +133,17 @@ class Navigation extends Component {
       <nav>
         <Box width="100%" px={[3, 3, 4]} className={fullNav}>
           <ul>
-            <li>Gatsbythemes.com starter</li>
+            <li>
+              <Link to="/">
+                <span role="img" aria-label="wow">
+                  ☁
+                </span>
+                WonderWow
+              </Link>
+            </li>
             <div>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About Us</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
@@ -152,7 +153,12 @@ class Navigation extends Component {
         </Box>
         <Box width="100%" px={[3, 3, 4]} className={mobileNav}>
           <ul>
-            <li>Gatsbythemes.com starter</li>
+            <li>
+              <span role="img" aria-label="wow">
+                ☁
+              </span>
+              WonderWow
+            </li>
             <li>
               <div
                 onClick={this.toggleNav}

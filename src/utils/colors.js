@@ -1,12 +1,12 @@
 const colors = {
   example1: {
-    primary: '#99424f',
+    primary: '#EF6461',
     secondary: '#fff',
     accent: '#333'
   },
   example2: {
     primary: '#fff',
-    secondary: '#85144B',
+    secondary: '#1B9AAA',
     accent: '#333'
   }
 };
